@@ -1,0 +1,21 @@
+ATELIÊ — LISTAGEM ÚNICA — V5.4.3
+
+Padrões adicionados à extensão:
+• Marca: Sem Marca (na aba Especificação).
+• País de Origem: China (na aba Especificação, SOMENTE como atributo do produto, não como origem fiscal).
+• Condição: Novo (na aba Outros).
+• Canais de envio: habilitar Shopee Xpress e Retirada pelo Comprador; Expresso Aéreo desligado se o status do interruptor for reconhecido.
+• Variações: habilita as variações, tenta informar os grupos e preencher linhas identificadas de SKU/preço/estoque. Quando não reconhecer os campos dinâmicos, use Ensinar campos > Nome da variação 1 / Opções da variação 1 / Nome da variação 2 / Opções da variação 2. A automação registra pendências quando a Shopee não aceitar alguma etapa.
+
+Instalação:
+1. Extraia o ZIP e, no Chrome, abra chrome://extensions.
+2. Remova a extensão antiga de Listagem Única, ou recarregue a pasta extraída após substituí-la.
+3. Carregar sem compactação: EXTENSAO_LISTAGEM_SHOPEE. Confira a versão 1.0.3.
+4. Não é necessário trocar o executável do Ateliê V5.4.2.
+5. Com o Ateliê aberto, prepare a Listagem Única e abra Novo Produto no Seller.
+6. Use Preencher campos na tela adequada, ou os botões específicos Marca / Origem / Novo, Preencher variações, Canais de envio.
+7. Para um seletor não reconhecido, Ensinar campos > Marca / País de Origem / Condição > Selecionar campo na página.
+
+Limitações: a Shopee usa componentes dinâmicos. O preenchimento integral das variações e os interruptores precisam de verificação na conta real. A extensão nunca salva nem publica; não altera condições fiscais sem seus dados e não seleciona categoria desconhecida.
+
+AVISO: País de Origem = China é o país de fabricação informado no anúncio, diferente de local de expedição Brasil e diferente do código fiscal de origem. Confira se China está correto para cada produto.

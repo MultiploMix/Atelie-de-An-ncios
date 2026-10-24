@@ -1,0 +1,35 @@
+ATELIÊ DE ANÚNCIOS — V5.4.2 — RECONHECIMENTO DE CAMPOS
+
+O QUE MUDOU
+- A conexão com o Ateliê permanece igual à V5.4.1.
+- Diagnóstico da página mostra se o cadastro individual da Shopee foi reconhecido.
+- Preenchimento tenta identificar Nome, Descrição, Peso e Dimensões pelo rótulo na Shopee.
+- Se não encontrar um campo, clique "Ensinar campos" e escolha o campo no formulário;
+  o Ateliê memoriza sua localização para outros anúncios da MESMA página.
+- Variantes (SKU, preço e estoque) permanecem para revisão quando existem
+  várias combinações no produto.
+- Categoria não confirmada não é selecionada automaticamente.
+- Frete só tenta ativar Shopee Xpress e Retirada pelo Comprador se disponíveis.
+- O Ateliê nunca publica ou salva o anúncio na Shopee sem sua confirmação.
+
+ATUALIZAÇÃO APENAS DA EXTENSÃO (RECOMENDADO)
+1. Abra chrome://extensions (ou edge://extensions).
+2. Remova a versão 1.0.1 da extensão "Ateliê de Anúncios — Listagem Única Shopee".
+3. Extraia o ZIP V5.4.2 e selecione a pasta EXTENSAO_LISTAGEM_SHOPEE
+   em "Carregar sem compactação" (Modo do desenvolvedor ativado).
+4. Verifique a versão 1.0.2. Não precisa substituir o EXE da V5.4.1.
+5. Reabra/atualize o Seller e abra o formulário ADICIONAR NOVO PRODUTO.
+6. No Ateliê, prepare o SKU desejado para Listagem Única.
+7. Clique em "Diagnosticar tela". Se houver campos faltando, clique em
+   "Ensinar campos" > escolha o campo > "Selecionar campo na página"
+   > clique na caixa correspondente do formulário Shopee.
+8. Depois de ensinar os campos necessários, clique "Preencher campos".
+9. Confira todos os dados, categoria, variações, fotos e canais de envio.
+
+OBSERVAÇÕES
+- Extensão usa armazenamento local do navegador para mapear os campos.
+- Mudanças no Seller podem invalidar o mapeamento. Ensine novamente.
+- A categoria precisa ser confirmada antes de selecionar automaticamente.
+- Textos, imagens e atributos não são publicados automaticamente.
+- O teste desta versão foi feito em páginas simuladas de formulário e
+  listagem. Ainda não foi validado na sua conta Shopee real.
