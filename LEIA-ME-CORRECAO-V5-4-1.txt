@@ -1,0 +1,31 @@
+ATELIÊ DE ANÚNCIOS — CORREÇÃO V5.4.1
+============================================
+
+PROBLEMA CORRIGIDO
+O painel Shopee mostrava "Failed to fetch" porque a extensão V5.4 não declarava
+permissão para acessar o servidor local http://127.0.0.1:32817.
+
+CORREÇÃO
+- Permissão de acesso local adicionada ao manifesto da extensão (versão 1.0.1).
+- Erros de conexão agora trazem instruções em português.
+- Botão "Tentar novamente" permite recuperar o anúncio sem fechar a página.
+- O EXE do Ateliê é o mesmo da V5.4; a correção está na extensão.
+
+COMO ATUALIZAR SEM DUPLICAR EXTENSÕES
+1. Feche a página da Shopee Seller (não é preciso sair da conta).
+2. Em chrome://extensions (ou edge://extensions), REMOVA apenas a extensão antiga
+   "Ateliê de Anúncios — Listagem Única Shopee".
+3. Extraia este ZIP em uma pasta nova, fora do OneDrive, se possível.
+4. No Chrome/Edge > Extensões, ative Modo do desenvolvedor.
+5. Clique em "Carregar sem compactação" e selecione a NOVA pasta
+   EXTENSAO_LISTAGEM_SHOPEE deste pacote.
+6. Confira a versão 1.0.1 e permita acesso ao endereço local 127.0.0.1.
+7. Deixe Atelie_de_Anuncios_Windows_V5_4.exe ABERTO.
+8. No Ateliê, clique em Listagem Única > Preparar Listagem Única no Seller novamente.
+9. Aguarde o painel mostrar SKU e nome do produto. Se houver erro, clique em
+   "Tentar novamente". Confira e revise antes de qualquer publicação.
+
+IMPORTANTE
+A extensão não publica nem salva anúncios. Preencher campos é experimental,
+e ainda depende do layout da Shopee. Não alteramos cadastros, SKUs ou preços
+nesta correção.

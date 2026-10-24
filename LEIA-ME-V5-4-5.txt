@@ -1,0 +1,15 @@
+ATELIÊ DE ANÚNCIOS — EXTENSÃO SHOPEE 1.0.5
+
+Correção de seletores Shopee: Marca = Sem marca; País de Origem = China; Condição = Novo.
+Agora o botão "Marca / Origem / Novo" abre cada seletor e procura uma opção exata, inclusive em menus renderizados fora do campo, com pesquisa interna.
+A extensão só informa seleção confirmada quando consegue ler o valor final. Se houver ambiguidade, não clica em opções arbitrárias.
+
+COMO ATUALIZAR
+1. Chrome/Edge > Extensões > remova a extensão antiga de Listagem Única.
+2. Carregar sem compactação > selecione EXTENSAO_LISTAGEM_SHOPEE desta versão.
+3. Atualize a página da Shopee e confira versão 1.0.5.
+4. No formulário Novo Produto, clique em "Marca / Origem / Novo".
+5. Se a página carregar seções sob demanda, abra Especificação e Outros antes de repetir.
+
+IMPORTANTE: País de origem deve corresponder à fabricação real do produto. Nunca confunda Brasil (local de envio) com origem do produto.
+A extensão não publica anúncios.

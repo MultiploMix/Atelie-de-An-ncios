@@ -1,12 +1,27 @@
 {
   "manifest_version": 3,
   "name": "Ateliê de Anúncios — Listagem Única Shopee",
-  "version": "1.0.0",
-  "description": "Preenche campos identificáveis do cadastro individual Shopee após confirmação do operador. Não publica anúncios.",
-  "permissions": ["storage"],
-  "host_permissions": ["https://seller.shopee.com.br/*"],
-  "background": {"service_worker":"background.js"},
+  "version": "1.0.5",
+  "description": "Seleciona opções Sem marca, China e Novo em listas suspensas da Shopee, com verificação visual e revisão humana.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://seller.shopee.com.br/*",
+    "http://127.0.0.1:32817/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
-    {"matches":["https://seller.shopee.com.br/*"], "js":["seller-helper.js"], "run_at":"document_start"}
+    {
+      "matches": [
+        "https://seller.shopee.com.br/*"
+      ],
+      "js": [
+        "seller-helper.js"
+      ],
+      "run_at": "document_start"
+    }
   ]
 }

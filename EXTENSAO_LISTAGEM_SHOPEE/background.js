@@ -8,9 +8,19 @@ chrome.runtime.onMessage.addListener((message,sender,reply)=>{
   if(!url.startsWith(SELLER))throw Error('Acesso permitido somente no Seller.');
   if(message?.type==='ATELIE_IMPORT_TOKEN'){
     const token=message.token;if(typeof token!=='string'||!/^[0-9a-f]{64}$/.test(token))throw Error('Sessão inválida');
-    const response=await fetch('http://127.0.0.1:32817/bridge/single?token='+token,{cache:'no-store'});
-    if(!response.ok)throw Error('O Ateliê não está aberto ou a sessão expirou');
-    const draft=await response.json();if(!validDraft(draft))throw Error('Dados inválidos');
+    let response;
+    const timeout=new AbortController();
+    const timer=setTimeout(()=>timeout.abort(),8500);
+    try{
+      response=await fetch('http://127.0.0.1:32817/bridge/single?token='+token,{cache:'no-store',signal:timeout.signal});
+    }catch(e){
+      throw Error('Não foi possível conectar ao Ateliê (127.0.0.1:32817). Deixe o programa aberto e atualize a extensão Shopee para a versão 1.0.1. Depois clique em Tentar novamente.');
+    }finally{clearTimeout(timer);}
+    if(!response.ok){
+      if(response.status===404||response.status===410)throw Error('Sessão do produto não encontrada ou expirada. Volte ao Ateliê e clique novamente em Preparar Listagem Única.');
+      throw Error('O Ateliê respondeu com erro HTTP '+response.status+'. Reabra a Listagem Única pelo aplicativo.');
+    }
+    const draft=await response.json();if(!validDraft(draft))throw Error('Dados do produto inválidos ou incompatíveis. Prepare novamente o anúncio no Ateliê.');
     await chrome.storage.local.set({atelieDraft:draft,atelieDraftAt:Date.now()});return {ok:true,draft};
   }
   if(message?.type==='ATELIE_GET'){
