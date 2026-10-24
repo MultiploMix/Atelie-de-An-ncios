@@ -1,0 +1,59 @@
+ATELIÊ DE ANÚNCIOS — V5.4 LISTAGEM ÚNICA SHOPEE
+================================================
+
+REQUISITOS
+- Windows 10/11 de 64 bits, Chrome ou Microsoft Edge instalado.
+- Não exige Python, Node.js, API paga ou assinatura extra.
+- Para usar o assistente do Seller, o Chrome/Edge usado para abrir a Shopee deve ter a extensão instalada.
+
+ATUALIZAR SEM PERDER OS PRODUTOS
+1. Na versão anterior, exporte um backup JSON.
+2. Extraia este ZIP em UMA NOVA PASTA, fora do OneDrive se possível (ex.: C:\Atelie de Anuncios V5.4).
+3. Execute Atelie_de_Anuncios_Windows_V5_4.exe.
+4. A V5.4 reutiliza o perfil local das V5.0–V5.3. Se os produtos não aparecerem, importe o backup JSON.
+5. Não apague a versão antiga até confirmar os SKUs e fotos.
+
+INSTALAR A EXTENSÃO SHOPEE (UMA VEZ)
+1. No aplicativo, clique em "Instalar extensão Shopee" para abrir a pasta.
+2. No navegador usado para o Seller, abra chrome://extensions (Chrome) ou edge://extensions (Edge).
+3. Ative o Modo do desenvolvedor.
+4. Clique em "Carregar sem compactação" e selecione EXTENSAO_LISTAGEM_SHOPEE.
+5. Mantenha essa extensão ativada. Se já estiver logado na Shopee, ótimo.
+
+LISTAGEM ÚNICA EM ETAPAS
+1. No Ateliê, selecione Listagem Única Shopee no menu à esquerda.
+2. Selecione o SKU e confira o título, descrição, categoria, peso, medidas e variações.
+3. Se uma categoria não estiver confirmada, use Categorias Inteligentes. A V5.4 não inventa IDs.
+4. Clique em "Preparar Listagem Única no Seller". O aplicativo abre a Central do Vendedor.
+5. Entre em Novo Produto > Listagem Única, caso ainda esteja em Meus Produtos.
+6. No canto inferior direito, use o painel Ateliê: "Preencher campos", "Selecionar categoria", "Canais de envio" e "Copiar variações".
+7. Confira todos os resultados. Envie imagens manualmente. Revise preço real e estoque.
+8. Somente você clica em "Salvar e Publicar".
+
+CANAIS DE ENVIO
+- Preferidos: Shopee Xpress e Retirada pelo Comprador.
+- Expresso Aéreo: padrão desligado.
+- O assistente só tenta alterar interruptores reconhecidos e habilitados. Se a categoria
+  não estiver selecionada, os canais podem continuar bloqueados. Nunca força um controle.
+
+LIMITES ATUAIS
+- Não é publicação automática: não clica em Salvar ou Publicar.
+- A categoria é sugerida a partir de IDs previamente confirmados. A seleção automática só
+  ocorre quando um elemento de categoria com ID correto está visível; senão o painel tenta
+  preencher uma busca ou indica a seleção manual.
+- Variações múltiplas e upload de fotos permanecem parcialmente manuais.
+- A interface da Shopee muda com frequência; o preenchimento de campos é experimental.
+- O botão Preparar envia os dados ao navegador por uma sessão local temporária de 20 minutos.
+- A extensão mantém o último rascunho por até 24 horas; não transmite dados a terceiros.
+- Nunca confunda origem logística Brasil com origem fiscal.
+
+SOLUÇÃO DE PROBLEMAS
+- Se o painel não aparecer: confira a instalação da extensão, atualize a página Seller (F5)
+  e prepare novamente o anúncio no Ateliê.
+- Se a primeira abertura levar à página de login: entre em sua conta e prepare novamente.
+- Se o seletor da categoria ou de um campo não for encontrado: faça esse campo manualmente.
+- Se o Windows avisar sobre aplicativo sem assinatura: o arquivo é portátil e não assinado.
+
+PROTEÇÃO DOS DADOS
+- Perfil local de cadastro no Windows, sem compartilhamento automático externo.
+- Backups JSON periódicos são recomendados.

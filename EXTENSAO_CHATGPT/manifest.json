@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Ateliê de Anúncios - Prompt e Fotos",
+  "version": "1.1.0",
+  "description": "Prepara uma conversa no ChatGPT com prompt e fotos do produto. Nunca envia a mensagem automaticamente.",
+  "host_permissions": ["http://127.0.0.1:32817/*"],
+  "background": {"service_worker": "background.js"},
+  "content_scripts": [{
+    "matches": ["https://chatgpt.com/*"],
+    "js": ["preencher_chatgpt.js"],
+    "run_at": "document_start"
+  }]
+}
