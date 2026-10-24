@@ -1,0 +1,61 @@
+ATELIÊ DE ANÚNCIOS - V5.0 PORTÁTIL WINDOWS (64 BITS)
+=====================================================
+
+PARA ABRIR
+1. Extraia todo o conteúdo do ZIP para uma pasta do seu Windows.
+2. Clique duas vezes em Atelie_de_Anuncios_Windows_V5.exe.
+3. O Ateliê abrirá em sua própria janela, sem barra de abas.
+4. É necessário Microsoft Edge ou Google Chrome instalado no Windows.
+   Não precisa instalar Python, Node.js ou extensões.
+
+COMO FUNCIONA
+O .exe é um programa Windows nativo que executa um servidor LOCAL protegido
+na porta 32817 e abre a interface em modo aplicativo do Edge/Chrome instalado.
+Isso permite uma janela própria e acesso nativo à área de transferência.
+A interface visual usa tecnologia web, e NÃO é uma janela WinForms/WPF.
+A internet só é usada quando você decide abrir serviços online como ChatGPT.
+
+ATELIÊ V5
+- Cadastro e revisão dos produtos, SKUs e variações.
+- Prompts separados de capa, carrossel, título e descrição.
+- Cópia dos prompts para área de transferência sem pedir permissão do Chrome.
+- Botões para copiar fotos ou pranchas de referências.
+- Fotos originais copiadas também para a pasta de Documentos do Windows,
+  organizadas por SKU; botão "Abrir pastas no Windows".
+- Exportação de XLSX com o modelo da Shopee, CSV, ZIP e backup JSON.
+- Valor R$ 129,90 e estoque 1 continuam PROVISÓRIOS, exigem revisão.
+
+MIGRAR OS CADASTROS DA VERSÃO WEB
+1. Na V4.5 antiga, abra "Exportação e backup" e salve o backup JSON completo.
+2. Abra a V5 .exe e clique em "Importar dados da versão web".
+3. Selecione o JSON e confirme a substituição somente após revisar.
+4. Clique em "Salvar fotos por SKU" para copiar suas fotos para Documentos.
+5. Confira fotos, variações e anúncios. Não apague a V4.5 antes de conferir.
+
+ARMAZENAMENTO
+- O catálogo completo (incluindo imagens) fica em armazenamento privado
+  do perfil do aplicativo, separado do perfil habitual do Chrome.
+- Cópias extras das fotos: Documentos/Atelie de Anuncios/Produtos/<SKU>/Fotos originais
+- O botão Backup do Ateliê gera JSON contendo cadastros e fotos.
+- Faça backups regularmente e armazene cópia em outro local.
+
+SOBRE CHATGPT E SHOPEE
+- Abrir ChatGPT COPIA o prompt e abre seu navegador de uso habitual.
+  Cole com Ctrl + V e anexe as fotos manualmente. A V5 ainda NÃO cola a
+  mensagem nem anexa fotos automaticamente em outro site.
+- A V5 NÃO usa API de geração de imagens e NÃO publica anúncios sozinha.
+- A planilha Shopee sai com fotos/categoria vazias para conferência.
+  O Seller pode exigir preenchimento desses campos para aceitar upload em massa.
+- Não inventar NCM, categoria, origem fiscal ou preço verdadeiro.
+
+OBSERVAÇÕES IMPORTANTES
+- O executável Windows foi compilado para x64 e verificado como PE32+.
+- Os módulos nativos e operações locais foram testados em ambiente Linux;
+  a ABERTURA REAL NO WINDOWS ainda precisa ser validada no seu computador.
+- O .exe não é assinado digitalmente. O SmartScreen/antivírus pode apresentar
+  um alerta. Só execute arquivos obtidos de fonte em que você confia.
+- Se houver outra cópia do Ateliê aberta ou a porta 32817 estiver ocupada,
+  ele avisará e não abrirá uma segunda instância.
+- Fechar a janela do Ateliê encerra seu serviço local.
+
+VERSÃO: 5.0.0 (23/10/2026)
